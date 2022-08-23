@@ -19,7 +19,6 @@ test: build
 	@$(CC) $(CFLAGS) test/$(TEST_BIN).c -o test/$(TEST_BIN)
 	@./test/ztest.sh "$(SRC_DIR)"
 
-
 format:
 	@$(FMT) *.c test/*.c
 
