@@ -1,0 +1,24 @@
+zreap
+-----
+
+Reap zombie processes.
+
+BUILD
+  The binary "zreap" can be built by running:
+
+    $ make
+
+  The source also includes a simple test that can be run with:
+
+    $ make test
+
+  Clean-up build artifacts with:
+
+    $ make clean
+
+USAGE
+  zreap -p PPID -z PID [-z PID]...
+
+ARGUMENTS
+  -p  PID of the parent process.
+  -z  A list of one (or more) zombie sub-process PIDs.
